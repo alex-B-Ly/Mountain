@@ -1,0 +1,304 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="3998" measuredH="1098" mockupW="3945" mockupH="1033">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="53" y="65" w="1300" h="1033" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Title" x="541" y="152" w="-1" h="-1" measuredW="324" measuredH="43" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Marvel%20Site%20Name</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::TextInput" x="541" y="220" w="324" h="-1" measuredW="92" measuredH="54" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>40</size>
+        <text>Hulk</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="635" y="289" w="-1" h="-1" measuredW="136" measuredH="24" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Search%20Characters</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::HRule" x="150" y="328" w="1106" h="-1" measuredW="100" measuredH="10" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Image" x="150" y="363" w="391" h="306" measuredW="1920" measuredH="1080" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <rotation>0</rotation>
+        <src>./hulk.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::HRule" x="150" y="699" w="1106" h="-1" measuredW="100" measuredH="10" zOrder="7" locked="false" isInGroup="-1"/>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Image" x="1629" y="348" w="182" h="171" measuredW="1920" measuredH="1080" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <rotation>0</rotation>
+        <src>./hulk.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="__group__" x="1526" y="65" w="389" h="792" measuredW="389" measuredH="792" zOrder="5" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="0" y="0" w="389" h="792" measuredW="282" measuredH="573" zOrder="0" locked="false" isInGroup="14">
+          <controlProperties>
+            <model>IPhone5</model>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="103" y="192" w="182" h="-1" measuredW="53" measuredH="34" zOrder="1" locked="false" isInGroup="14">
+          <controlProperties>
+            <align>center</align>
+            <size>20</size>
+            <text>Hulk</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Title" x="81" y="140" w="-1" h="-1" measuredW="227" measuredH="31" zOrder="2" locked="false" isInGroup="14">
+          <controlProperties>
+            <size>28</size>
+            <text>Marvel%20Site%20Name</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="126" y="239" w="-1" h="-1" measuredW="136" measuredH="24" zOrder="3" locked="false" isInGroup="14">
+          <controlProperties>
+            <size>16</size>
+            <text>Search%20Characters</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::HRule" x="70" y="273" w="249" h="-1" measuredW="100" measuredH="10" zOrder="4" locked="false" isInGroup="14"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="15" controlTypeID="__group__" x="1977" y="65" w="389" h="792" measuredW="389" measuredH="792" zOrder="9" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="0" y="0" w="389" h="792" measuredW="282" measuredH="573" zOrder="0" locked="false" isInGroup="15">
+          <controlProperties>
+            <model>IPhone5</model>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="103" y="192" w="182" h="-1" measuredW="53" measuredH="34" zOrder="1" locked="false" isInGroup="15">
+          <controlProperties>
+            <align>center</align>
+            <size>20</size>
+            <text>Hulk</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Title" x="81" y="140" w="-1" h="-1" measuredW="227" measuredH="31" zOrder="2" locked="false" isInGroup="15">
+          <controlProperties>
+            <size>28</size>
+            <text>Marvel%20Site%20Name</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="126" y="239" w="-1" h="-1" measuredW="136" measuredH="24" zOrder="3" locked="false" isInGroup="15">
+          <controlProperties>
+            <size>16</size>
+            <text>Search%20Characters</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::HRule" x="70" y="273" w="249" h="-1" measuredW="100" measuredH="10" zOrder="4" locked="false" isInGroup="15"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Title" x="865" y="348" w="-1" h="-1" measuredW="69" measuredH="31" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>Stats</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::VRule" x="531" y="338" w="-1" h="361" measuredW="10" measuredH="100" zOrder="11" locked="false" isInGroup="-1"/>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::HRule" x="1592" y="536" w="256" h="-1" measuredW="100" measuredH="10" zOrder="13" locked="false" isInGroup="-1"/>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Title" x="1686" y="552" w="-1" h="-1" measuredW="69" measuredH="31" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>Stats</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="__group__" x="586" y="402" w="473" h="219" measuredW="473" measuredH="219" zOrder="12" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="0" w="189" h="-1" measuredW="187" measuredH="28" zOrder="0" locked="false" isInGroup="59">
+          <controlProperties>
+            <size>20</size>
+            <text>Name%3A%20Bruce%20Banner</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="0" y="48" w="249" h="-1" measuredW="243" measuredH="28" zOrder="1" locked="false" isInGroup="59">
+          <controlProperties>
+            <size>20</size>
+            <text>First%20appearance%3A%20issue%20%23...</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="0" y="96" w="103" h="-1" measuredW="102" measuredH="28" zOrder="2" locked="false" isInGroup="59">
+          <controlProperties>
+            <size>20</size>
+            <text>Height%3A%209%20ft</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="0" y="145" w="145" h="-1" measuredW="142" measuredH="28" zOrder="3" locked="false" isInGroup="59">
+          <controlProperties>
+            <size>20</size>
+            <text>Weight%3A%20900%20lbs</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="0" y="191" w="116" h="-1" measuredW="115" measuredH="28" zOrder="4" locked="false" isInGroup="59">
+          <controlProperties>
+            <size>20</size>
+            <text>More%20stats%20...</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="363" y="0" w="110" h="-1" measuredW="108" measuredH="28" zOrder="5" locked="false" isInGroup="59">
+          <controlProperties>
+            <size>20</size>
+            <text>More%20stats...</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="363" y="45" w="110" h="-1" measuredW="108" measuredH="28" zOrder="6" locked="false" isInGroup="59">
+          <controlProperties>
+            <size>20</size>
+            <text>More%20stats...</text>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::Label" x="363" y="100" w="110" h="-1" measuredW="108" measuredH="28" zOrder="7" locked="false" isInGroup="59">
+          <controlProperties>
+            <size>20</size>
+            <text>More%20stats...</text>
+          </controlProperties>
+        </control>
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="363" y="145" w="110" h="-1" measuredW="108" measuredH="28" zOrder="8" locked="false" isInGroup="59">
+          <controlProperties>
+            <size>20</size>
+            <text>More%20stats...</text>
+          </controlProperties>
+        </control>
+        <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="363" y="191" w="110" h="-1" measuredW="108" measuredH="28" zOrder="9" locked="false" isInGroup="59">
+          <controlProperties>
+            <size>20</size>
+            <text>More%20stats...</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::Label" x="1592" y="583" w="129" h="-1" measuredW="122" measuredH="21" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>13</size>
+        <text>Name%3A%20Bruce%20Banner</text>
+      </controlProperties>
+    </control>
+    <control controlID="62" controlTypeID="com.balsamiq.mockups::Label" x="1592" y="613" w="153" h="-1" measuredW="158" measuredH="21" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>13</size>
+        <text>First%20appearance%3A%20issue%20%23...</text>
+      </controlProperties>
+    </control>
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::Label" x="1770" y="583" w="77" h="-1" measuredW="70" measuredH="21" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>13</size>
+        <text>More%20stats...</text>
+      </controlProperties>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::Label" x="1770" y="613" w="77" h="-1" measuredW="70" measuredH="21" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>13</size>
+        <text>More%20stats...</text>
+      </controlProperties>
+    </control>
+    <control controlID="71" controlTypeID="__group__" x="1592" y="642" w="255" h="81" measuredW="255" measuredH="81" zOrder="19" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="0" w="83" h="-1" measuredW="66" measuredH="21" zOrder="0" locked="false" isInGroup="71">
+          <controlProperties>
+            <size>13</size>
+            <text>Height%3A%209%20ft</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="0" y="31" w="94" h="-1" measuredW="93" measuredH="21" zOrder="1" locked="false" isInGroup="71">
+          <controlProperties>
+            <size>13</size>
+            <text>Weight%3A%20900%20lbs</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="0" y="60" w="83" h="-1" measuredW="75" measuredH="21" zOrder="2" locked="false" isInGroup="71">
+          <controlProperties>
+            <size>13</size>
+            <text>More%20stats%20...</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="178" y="0" w="77" h="-1" measuredW="70" measuredH="21" zOrder="3" locked="false" isInGroup="71">
+          <controlProperties>
+            <size>13</size>
+            <text>More%20stats...</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="178" y="31" w="77" h="-1" measuredW="70" measuredH="21" zOrder="4" locked="false" isInGroup="71">
+          <controlProperties>
+            <size>13</size>
+            <text>More%20stats...</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="178" y="60" w="77" h="-1" measuredW="70" measuredH="21" zOrder="5" locked="false" isInGroup="71">
+          <controlProperties>
+            <size>13</size>
+            <text>More%20stats...</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="72" controlTypeID="__group__" x="2044" y="363" w="255" h="81" measuredW="255" measuredH="81" zOrder="20" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="0" w="83" h="-1" measuredW="66" measuredH="21" zOrder="0" locked="false" isInGroup="72">
+          <controlProperties>
+            <size>13</size>
+            <text>Height%3A%209%20ft</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="0" y="31" w="94" h="-1" measuredW="93" measuredH="21" zOrder="1" locked="false" isInGroup="72">
+          <controlProperties>
+            <size>13</size>
+            <text>Weight%3A%20900%20lbs</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="0" y="60" w="83" h="-1" measuredW="75" measuredH="21" zOrder="2" locked="false" isInGroup="72">
+          <controlProperties>
+            <size>13</size>
+            <text>More%20stats%20...</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="178" y="0" w="77" h="-1" measuredW="70" measuredH="21" zOrder="3" locked="false" isInGroup="72">
+          <controlProperties>
+            <size>13</size>
+            <text>More%20stats...</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="178" y="31" w="77" h="-1" measuredW="70" measuredH="21" zOrder="4" locked="false" isInGroup="72">
+          <controlProperties>
+            <size>13</size>
+            <text>More%20stats...</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="178" y="60" w="77" h="-1" measuredW="70" measuredH="21" zOrder="5" locked="false" isInGroup="72">
+          <controlProperties>
+            <size>13</size>
+            <text>More%20stats...</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::HRule" x="2044" y="459" w="256" h="-1" measuredW="100" measuredH="10" zOrder="21" locked="false" isInGroup="-1"/>
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::VideoPlayer" x="195" y="776" w="-1" h="-1" measuredW="300" measuredH="200" zOrder="22" locked="false" isInGroup="-1"/>
+    <control controlID="75" controlTypeID="com.balsamiq.mockups::VideoPlayer" x="553" y="776" w="-1" h="-1" measuredW="300" measuredH="200" zOrder="23" locked="false" isInGroup="-1"/>
+    <control controlID="76" controlTypeID="com.balsamiq.mockups::VideoPlayer" x="913" y="776" w="-1" h="-1" measuredW="300" measuredH="200" zOrder="24" locked="false" isInGroup="-1"/>
+    <control controlID="78" controlTypeID="com.balsamiq.mockups::Title" x="642" y="723" w="-1" h="-1" measuredW="123" measuredH="43" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Videos</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="79" controlTypeID="com.balsamiq.mockups::Title" x="2111" y="476" w="-1" h="-1" measuredW="123" measuredH="43" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Videos</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="80" controlTypeID="com.balsamiq.mockups::VideoPlayer" x="2061" y="552" w="105" h="96" measuredW="300" measuredH="200" zOrder="27" locked="false" isInGroup="-1"/>
+    <control controlID="81" controlTypeID="com.balsamiq.mockups::VideoPlayer" x="3893" y="328" w="105" h="96" measuredW="300" measuredH="200" zOrder="28" locked="false" isInGroup="-1"/>
+    <control controlID="82" controlTypeID="com.balsamiq.mockups::VideoPlayer" x="2181" y="552" w="105" h="96" measuredW="300" measuredH="200" zOrder="29" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>
