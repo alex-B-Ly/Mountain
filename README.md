@@ -12,7 +12,11 @@ An interactive Marvel Super Hero website that allows the user to access informat
 
 
 ### Technologies Used
--HTML5 -CSS3 -JavaScript -jQuery -Bootstrap 
+-HTML5 
+-CSS3 
+-JavaScript 
+-jQuery 
+-Bootstrap 
 
 ### Deployed Link
 http://my.herokuapp.com/
