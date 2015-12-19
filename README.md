@@ -1,13 +1,13 @@
-## MarvelFrontEndProject
+## My-Mountain
 
 ### General Project Summary
 
-An interactive Marvel Super Hero website that allows the user to access information dynamically by choosing the Marvel World characters.
-* Utilizing YouTube api by pulling marvel movies when specific Marvel characters are clicked and linking them to specific Marvel Universe characters. 
-* A wiki style database of main Marvel characters
-* User can search for any Marvel character and be able to receive information of comic, movies and the years they were released. 
-* A gallery of awesome Marvel Comic Book characters
-* Users are able to search video game information for Marvel characters.
+* An interactive outdoor website where enthusiast from all over the world can search outdoor adventures. 
+
+* Utilizing outdoor API’s by pulling in data containing locations such as rock climbing points and at the same time utilizing the weather API to pass through real time weather information. 
+
+* Users can retrieve location of outdoor activities, like snowboarding and rock-climbing by state. Search results will return flicker photos, location, weather information and YouTube videos.   
+
 
 
 
@@ -22,9 +22,10 @@ An interactive Marvel Super Hero website that allows the user to access informat
 http://my.herokuapp.com/
 
 ### API's Used
-- API one - http://developer.marvel.com/
+- API one - https://www.flickr.com/services/api/
 - API two - https://developers.google.com/youtube/
-- API three -http://www.omdbapi.com/
+- API three - https://developers.google.com/maps/documentation/geocoding/intro
+- API four - http://openweathermap.org/api
 
 ### Trello Link
 https://trello.com/b/EGEXZaWz/marvel-front-end-project
