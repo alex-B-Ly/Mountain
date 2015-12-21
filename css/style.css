@@ -1,5 +1,9 @@
 /* BASE - All major html elements (h1, h2, a, etc) go here*/
 
+#header {
+  position: relative;
+  top: 50px;
+}
 
 
 
