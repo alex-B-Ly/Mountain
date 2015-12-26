@@ -10,7 +10,9 @@
 /* SECTIONS */
 
 	/* NAV SECTION */
-
+#radio {
+  padding-left: 10px;
+}
 
 	/* HEADER SECTION */
 
