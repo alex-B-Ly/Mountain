@@ -15,6 +15,24 @@ $("#selected-area").keypress(function(e) {
     }
 });
 
+
+//builds photo urls, then builds the collection of photos
+function buildThumbnail(photoData) {  
+    var photoUrl = "https://farm" + photoData.farm; 
+    photoUrl += ".staticflickr.com/" + photoData.server;
+    photoUrl += "/" + photoData.id;
+    photoUrl += "_" + photoData.secret + ".jpg";
+
+    var colDiv = $("<div>").addClass("col-md-8");
+    var photoImg = $("<img>").attr("src", photoUrl).attr("width", "200px").addClass("materialboxed");
+    
+
+    colDiv.append(photoImg);
+
+    return colDiv;
+
+  }
+
 //images from flickr based on user location
     function googleApiSuccessHandler() {
     var flickrApiUrl = "https://api.flickr.com/services/rest/?";
@@ -34,3 +52,13 @@ $("#selected-area").keypress(function(e) {
     });
 
 }
+ // loops through all images and applies to page
+  function flickrSuccessHandler(response) { 
+    var locationPhotos = response.photos.photo; 
+    for(var i = 0; i < 20; i++) {  
+      var newCol = buildThumbnail(locationPhotos[i]);
+      $("#flickrRow").append(newCol);
+
+    }
+  }
+});
