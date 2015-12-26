@@ -24,7 +24,7 @@ function buildThumbnail(photoData) {
     photoUrl += "_" + photoData.secret + ".jpg";
 
     var colDiv = $("<div>").addClass("col-md-8");
-    var photoImg = $("<img>").attr("src", photoUrl).attr("width", "300px")
+    var photoImg = $("<img>").attr("src", photoUrl).attr("width", "300px");
     
 
     colDiv.append(photoImg);
