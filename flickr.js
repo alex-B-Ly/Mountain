@@ -1,7 +1,19 @@
 $(document).ready(function() {
 
 
+googleApiSuccessHandler();
 
+
+
+//keypress function to show images
+$("#selected-area").keypress(function(e) {
+    if (e.which == 13) {
+        setTimeout(function() {
+            googleApiSuccessHandler();
+            $("flickrRow").empty();
+        },650)
+    }
+});
 
 //images from flickr based on user location
     function googleApiSuccessHandler() {
