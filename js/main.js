@@ -24,6 +24,7 @@ latLon;
 				latLon.push(lng);
 
 				// Pass weather data to table in html here
+				$('.weather-table-place-name').html(placeName);
 			},
 			error: function(){
 				console.log('Weather request failed');
