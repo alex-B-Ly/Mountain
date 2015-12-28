@@ -23,8 +23,7 @@ latLon;
 				latLon.push(lat);
 				latLon.push(lng);
 
-				console.log(placeName + ', ' + placeRegion);
-				console.log(latLon);
+				// Pass weather data to table in html here
 			},
 			error: function(){
 				console.log('Weather request failed');
