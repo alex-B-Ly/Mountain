@@ -3,6 +3,7 @@
 <head>
     <title>Outdoor Stuff</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -18,11 +19,12 @@
       </div>
       <div class="col-xs-12">
         <!-- Search by place will be required -->
-        <input id="place-search" type="text">
+        <input id="place-search" type="text" placeholder="search places">
+        <button class="btn btn-primary place-search-button"><i class="fa fa-search"></i></button>
       </div>
       <div class="col-xs-12">
         <!-- Search by tag will be optional -->
-        <input id="tag-search" type="text">
+        <input id="tag-search" type="text" placeholder="tag search, leave blank for default">
       </div>
     </header>
   </div>

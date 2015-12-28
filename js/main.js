@@ -1,22 +1,46 @@
 $(document).ready(function() {
 
-// var map;
+var map,
+latLon = [];
 
-// function generateMap(){
+// MAIN FUNCTION BEGIN
 
-//   var mapOptions = {
-//     center: {lat: 40.4995488, lng: -74.4443186},
-//     zoom: 12,
-//     zoomControl: true,
-//     zoomControlOptions: {
-//       position: google.maps.ControlPosition.RIGHT_BOTTOM
-//     }
-//   }
+// 	WEATHER FUNCTION
+	function generateWeather(){
+		var weatherApiKey = , // WEATHER API KEY GOES HERE
+		placeSearch = $('#place-search').val().toLowerCase();
 
-// 	map = new google.maps.Map(document.getElementById('map'), mapOptions);
-// }
+		$.ajax({
+			url: 'https://api.worldweatheronline.com/free/v2/weather.ashx?key=' + weatherApiKey + '&q=' + placeSearch + 'num_of_days=5&tp=12&includelocation=yes&format=json';
+			type: 'GET',
+			success: function(place){
+				// Manipulate json weather data here, push latitude and longitude data to latLon global array in proper order so it can be used by Google Maps and Flickr 
+			},
+			error: function(){
+				console.log('Weather request failed');
+			}
+		});
+	}
+
+// 	MAP FUNCTION
+
+// 	function generateMap(latitude, longitute){
+
+// 	  var mapOptions = {
+// 	    center: {lat: latitude, lng: longitude},
+// 	    zoom: 12,
+// 	    zoomControl: true,
+// 	    zoomControlOptions: {
+// 	      position: google.maps.ControlPosition.RIGHT_BOTTOM
+// 	    }
+// 	  }
+
+// 		map = new google.maps.Map(document.getElementById('map'), mapOptions);
+// 	}
+
+// MAIN FUNCTION END
 
 // FUNCTIONS CALLED
-// $('.search-button').on('click', generateMap);
+$('.place-search-button').on('click', generateWeather);
 
 });
