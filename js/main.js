@@ -15,7 +15,10 @@ latLon;
 			type: 'GET',
 			success: function(place){
 				var placeName = place.data.nearest_area[0].areaName[0].value,
-				placeRegion = place.data.nearest_area[0].region[0].value;
+				placeRegion = place.data.nearest_area[0].region[0].value,
+				lat = place.data.nearest_area[0].latitude,
+				lng = place.data.nearest_area[0].longitude;
+
 				latLon = [];
 				latLon.push(lat);
 				latLon.push(lng);
@@ -24,7 +27,7 @@ latLon;
 				$('.weather-table-place-name').html(placeName + ', ' + placeRegion);
 
 				// Generate Map
-				// WARNING: LAT AND LON DATA RETURNED FROM THE WEATHER FUNCTION DOESN'T GIVE EXACT LOCATION POSITION ON GOOGLE MAPS
+				generateMap(parseFloat(latLon[0]), parseFloat(latLon[1]));
 			},
 			error: function(){
 				console.log('Weather request failed');
@@ -34,19 +37,19 @@ latLon;
 
 // 	MAP FUNCTION
 
-	// function generateMap(latitude, longitude){
+	function generateMap(latitude, longitude){
 
-	//   var mapOptions = {
-	//     center: {lat: latitude, lng: longitude},
-	//     zoom: 12,
-	//     zoomControl: true,
-	//     zoomControlOptions: {
-	//       position: google.maps.ControlPosition.RIGHT_BOTTOM
-	//     }
-	//   }
+	  var mapOptions = {
+	    center: {lat: latitude, lng: longitude},
+	    zoom: 12,
+	    zoomControl: true,
+	    zoomControlOptions: {
+	      position: google.maps.ControlPosition.RIGHT_BOTTOM
+	    }
+	  }
 
-	// 	map = new google.maps.Map(document.getElementById('map'), mapOptions);
-	// }
+		map = new google.maps.Map(document.getElementById('map'), mapOptions);
+	}
 
 // MAIN FUNCTION END
 
