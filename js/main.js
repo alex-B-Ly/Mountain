@@ -8,13 +8,13 @@ latLon = [];
 // 	WEATHER FUNCTION
 	function generateWeather(){
 		var weatherApiKey = '', // WEATHER API KEY GOES HERE
-		placeSearch = $('#place-search').val().toLowerCase();
+		placeSearch = $('#place-search').val();
 
 		$.ajax({
-			url: 'https://api.worldweatheronline.com/free/v2/weather.ashx?key=' + weatherApiKey + '&q=' + placeSearch + 'num_of_days=5&tp=12&includelocation=yes&format=json',
+			url: 'https://api.worldweatheronline.com/free/v2/weather.ashx?key=' + weatherApiKey + '&q=' + placeSearch + '&num_of_days=5&tp=12&includelocation=yes&format=json',
 			type: 'GET',
 			success: function(place){
-				console.log(place); 
+				console.log(place);
 			},
 			error: function(){
 				console.log('Weather request failed');
