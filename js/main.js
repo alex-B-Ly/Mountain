@@ -31,7 +31,7 @@ latLon;
 					// run a loop based on num_of_days and build weather data rows in table.
 
 				// Generate Map
-				// generateMap(parseFloat(latLon[0]), parseFloat(latLon[1]));
+				generateMap(parseFloat(latLon[0]), parseFloat(latLon[1]));
 			},
 			error: function(){
 				console.log('Weather request failed');
@@ -41,19 +41,19 @@ latLon;
 
 // 	MAP FUNCTION
 
-	// function generateMap(latitude, longitude){
+	function generateMap(latitude, longitude){
 
-	//   var mapOptions = {
-	//     center: {lat: latitude, lng: longitude},
-	//     zoom: 12,
-	//     zoomControl: true,
-	//     zoomControlOptions: {
-	//       position: google.maps.ControlPosition.RIGHT_BOTTOM
-	//     }
-	//   }
+	  var mapOptions = {
+	    center: {lat: latitude, lng: longitude},
+	    zoom: 12,
+	    zoomControl: true,
+	    zoomControlOptions: {
+	      position: google.maps.ControlPosition.RIGHT_BOTTOM
+	    }
+	  }
 
-	// 	map = new google.maps.Map(document.getElementById('map'), mapOptions);
-	// }
+		map = new google.maps.Map(document.getElementById('map'), mapOptions);
+	}
 
 // MAIN FUNCTION END
 
