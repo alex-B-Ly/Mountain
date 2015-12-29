@@ -30,6 +30,8 @@ latLon;
 
 				// Pass weather data to table in html here
 				$('.weather-table-place-name').html(placeName + ', ' + placeRegion);
+				// TODO remove rows with weather-row class
+
 				// run a loop based on num_of_days and build weather data rows in table.
 				for(var i=0; i<placeWeather.length; i++){
 					var weatherRow = $('<tr>'),
@@ -51,14 +53,13 @@ latLon;
 						day.html(weekdays[date.getDay()+4]);
 					}
 
-					//TODO Must do currentCond
 					if(i>0){
 						cond.html(placeWeather[i].hourly[0].weatherDesc[0].value);
 					}
 					maxTemp.html(placeWeather[i].maxtempF + ' F');
 					minTemp.html((placeWeather[i].mintempF + ' F'));
 
-					weatherRow.append(day).append(cond).append(maxTemp).append(minTemp);
+					weatherRow.append(day).append(cond).append(maxTemp).append(minTemp).addClass('weather-row');
 					weatherTableBody.append(weatherRow);
 				}
 
