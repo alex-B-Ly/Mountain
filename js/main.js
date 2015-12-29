@@ -31,7 +31,7 @@ latLon;
 				// Pass weather data to table in html here
 				$('.weather-table-place-name').html(placeName + ', ' + placeRegion);
 				// TODO remove rows with weather-row class
-
+				$('.weather-row').remove();
 				// run a loop based on num_of_days and build weather data rows in table.
 				for(var i=0; i<placeWeather.length; i++){
 					var weatherRow = $('<tr>'),
