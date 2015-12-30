@@ -11,7 +11,7 @@ latLon;
 		placeSearch = $('#place-search').val();
 
 		$.ajax({
-			url: 'https://api.worldweatheronline.com/free/v2/weather.ashx?key=' + weatherApiKey + '&q=' + placeSearch + '&num_of_days=5&tp=12&includelocation=yes&format=json',
+			url: 'https://api.worldweatheronline.com/free/v2/weather.ashx?key=' + weatherApiKey + '&q=' + placeSearch + '&num_of_days=5&tp=24&includelocation=yes&format=json',
 			type: 'GET',
 			success: function(place){
 				var placeName = place.data.nearest_area[0].areaName[0].value,
@@ -46,11 +46,23 @@ latLon;
 					}else if(i===1){
 						day.html('Tomorrow');
 					}else if(i===2){
-						day.html(weekdays[date.getDay()+2]);
+						if(weekdays[date.getDay()+2] === undefined){
+							day.html('Sunday');
+						}else{
+							day.html(weekdays[date.getDay()+2]);
+						}
 					}else if(i===3){
-						day.html(weekdays[date.getDay()+3]);
+						if(weekdays[date.getDay()+3] === undefined){
+							day.html('Sunday');
+						}else{
+							day.html(weekdays[date.getDay()+3]);
+						}
 					}else if(i===4){
-						day.html(weekdays[date.getDay()+4]);
+						if(weekdays[date.getDay()+4] === undefined){
+							day.html('Sunday');
+						}else{
+							day.html(weekdays[date.getDay()+4])
+						}
 					}
 
 					if(i>0){
@@ -66,7 +78,7 @@ latLon;
 				// Generate Map
 				generateMap(parseFloat(latLon[0]), parseFloat(latLon[1]));
 				// Generate Images
-				generateImages(parseFloat(latLon[0]), parseFloat(latLon[1]), placeName);
+				// generateImages(parseFloat(latLon[0]), parseFloat(latLon[1]), placeName);
 			},
 			error: function(){
 				console.log('Weather request failed');
