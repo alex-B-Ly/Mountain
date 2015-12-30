@@ -1,4 +1,4 @@
-﻿## Weather Forecast
+## Weather Forecast
 
 ### General Project Summary
 
