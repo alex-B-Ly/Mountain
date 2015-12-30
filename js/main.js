@@ -101,7 +101,8 @@ latLon;
 			format: 'json',
 			nojsoncallback: 1,
 			lat: latitude,
-			lon: longitude
+			lon: longitude,
+			tag: name
 		}
 
 		$.ajax({
