@@ -30,7 +30,7 @@ latLon;
 
 				// Pass weather data to table in html here
 				$('.weather-table-place-name').html(placeName + ', ' + placeRegion);
-				// TODO remove rows with weather-row class
+				// remove rows with weather-row class
 				$('.weather-row').remove();
 				// run a loop based on num_of_days and build weather data rows in table.
 				for(var i=0; i<placeWeather.length; i++){
@@ -40,6 +40,7 @@ latLon;
 					maxTemp = $('<td>'),
 					minTemp = $('<td>');
 
+					// TODO Figure out the days, will probably have to use switch case inside if statements
 					if(i===0){
 						day.html('Today');
 						cond.html(placeCurrentCondition.temp_F + ' F, ' + placeCurrentCondition.weatherDesc[0].value);
