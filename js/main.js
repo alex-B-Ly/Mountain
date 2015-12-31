@@ -46,54 +46,8 @@ latLon;
 						cond.html(placeCurrentCondition.temp_F + ' F, ' + placeCurrentCondition.weatherDesc[0].value);
 					}else if(i===1){
 						day.html('Tomorrow');
-					}else if(i===2){
-						if(weekdays[date.getDay()+2] === undefined){
-							switch(weekdays[date.getDay()]){
-								case 'Friday':
-									day.html('Sunday');
-									break;
-								case 'Saturday':
-									day.html('Monday');
-									break;
-							}
-						}else{
-							day.html(weekdays[date.getDay()+2]);
-						}
-					}else if(i===3){
-						if(weekdays[date.getDay()+3] === undefined){
-							switch(weekdays[date.getDay()]){
-								case 'Thursday':
-									day.html('Sunday');
-									break;
-								case 'Friday':
-									day.html('Monday');
-									break;
-								case 'Saturday':
-									day.html('Tuesday');
-									break;
-							}
-						}else{
-							day.html(weekdays[date.getDay()+3]);
-						}
-					}else if(i===4){
-						if(weekdays[date.getDay()+4] === undefined){
-							switch(weekdays[date.getDay()]){
-								case 'Wednesday':
-									day.html('Sunday');
-									break;
-								case 'Thursday':
-									day.html('Monday');
-									break;
-								case 'Friday':
-									day.html('Tuesday');
-									break;
-								case 'Saturday':
-									day.html('Wednesday');
-									break;
-							}
-						}else{
-							day.html(weekdays[date.getDay()+4])
-						}
+					}else{
+						day.html(weekdays[(date.getDay()+i) % 7]);
 					}
 
 					if(i>0){
