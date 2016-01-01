@@ -1,9 +1,10 @@
 $(document).ready(function() {
 
-var map,
-latLon;
-
 // MAIN FUNCTION BEGIN
+
+var map,
+latLon,
+photoCount=0;
 
 // 	WEATHER FUNCTION
 	function generateWeather(){
@@ -63,7 +64,7 @@ latLon;
 				// Generate Map
 				generateMap(parseFloat(latLon[0]), parseFloat(latLon[1]));
 				// Generate Images
-				// generateImages(parseFloat(latLon[0]), parseFloat(latLon[1]), placeName);
+				generateImages(parseFloat(latLon[0]), parseFloat(latLon[1]), placeName);
 			},
 			error: function(){
 				console.log('Weather request failed');
@@ -99,21 +100,55 @@ latLon;
 			nojsoncallback: 1,
 			lat: latitude,
 			lon: longitude,
-			tag: name
+			text: name
 		}
+
+		$('.first-img-row').empty();
+		$('.second-img-row').empty();
+
+		var imgTdCount = 0;
 
 		$.ajax({
 			url: flickrUrl + $.param(apiParams),
 			type: 'GET',
 			success: function(photoData){
-				console.log(photoData);
+				var photoArray = photoData.photos.photo;
+				
+				// Build images into table
+				for(var i=0; i<13; i++){
+					imageBuilder(photoArray[i]);
+				}
 			}
 		});
+
+		function imageBuilder(currentPhoto){
+			var photoUrl = 'https://farm' + currentPhoto.farm;
+			photoUrl += '.staticflickr.com/' + currentPhoto.server;
+			photoUrl += '/' + currentPhoto.id + '_' + currentPhoto.secret + '.jpg';
+
+			var imageTd = $('<td>'),
+			photoCreated = $('<img>').addClass('img-responsive').attr('src', photoUrl);
+
+			if(imgTdCount>=0 && imgTdCount<6){
+				imageTd.append(photoCreated);
+				$('.first-img-row').append(imageTd);
+			}else if(imgTdCount>=6 && imgTdCount<12){
+				imageTd.append(photoCreated);
+				$('.second-img-row').append(imageTd);
+			}
+
+			imgTdCount++;
+		}
+
 	}
+
+
+
+// FUNCTIONS CALLED
+	$('.place-search-button').on('click', generateWeather);
 
 // MAIN FUNCTION END
 
-// FUNCTIONS CALLED
-$('.place-search-button').on('click', generateWeather);
+
 
 });
