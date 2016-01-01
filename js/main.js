@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
 var map,
-latLon;
+latLon,
+photoCount=0;
 
 // MAIN FUNCTION BEGIN
 
@@ -63,7 +64,7 @@ latLon;
 				// Generate Map
 				generateMap(parseFloat(latLon[0]), parseFloat(latLon[1]));
 				// Generate Images
-				// generateImages(parseFloat(latLon[0]), parseFloat(latLon[1]), placeName);
+				generateImages(parseFloat(latLon[0]), parseFloat(latLon[1]), placeName);
 			},
 			error: function(){
 				console.log('Weather request failed');
@@ -106,7 +107,14 @@ latLon;
 			url: flickrUrl + $.param(apiParams),
 			type: 'GET',
 			success: function(photoData){
-				console.log(photoData);
+				var photoArray = photoData.photos.photo;
+
+				// PhotoCount is a global var.  This for loop will have to be moved into new ajax call function
+				for(var i=0; i<3; i++){
+					console.log(photoArray[photoCount]);
+					photoCount++;
+					console.log(photoCount);
+				}
 			}
 		});
 	}
