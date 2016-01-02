@@ -1,13 +1,13 @@
-## MarvelFrontEndProject
+## Weather Forecast
 
 ### General Project Summary
 
-An interactive Marvel Super Hero website that allows the user to access information dynamically by choosing the Marvel World characters.
-* Utilizing YouTube api by pulling marvel movies when specific Marvel characters are clicked and linking them to specific Marvel Universe characters. 
-* A wiki style database of main Marvel characters
-* User can search for any Marvel character and be able to receive information of comic, movies and the years they were released. 
-* A gallery of awesome Marvel Comic Book characters
-* Users are able to search video game information for Marvel characters.
+* An interactive Weather app in which users can call back and receive weather information based on location.  
+
+* Utilizing weather API’s and Google Maps API’s the user can search location and receive map info tied in to the weather location. 
+
+* Users can retrieve images of the surrounding location using the Flicker API.   
+
 
 
 
@@ -22,9 +22,9 @@ An interactive Marvel Super Hero website that allows the user to access informat
 http://my.herokuapp.com/
 
 ### API's Used
-- API one - http://developer.marvel.com/
-- API two - https://developers.google.com/youtube/
-- API three -http://www.omdbapi.com/
+- API one - https://www.flickr.com/services/api/
+- API two - http://openweathermap.org/api
+- API three - https://developers.google.com/maps/documentation/geocoding/intro
 
 ### Trello Link
 https://trello.com/b/EGEXZaWz/marvel-front-end-project
