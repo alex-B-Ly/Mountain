@@ -77,151 +77,151 @@ photoCount=0;
 	function generateMap (latitude, longitude){
 
 	  var mapOptions = {
-	    center: {lat: latitude, lng: longitude},
-	   	zoom: 12,
-	    zoomControl: true,
-	    // Use Snazzymaps.com to customize the style of the map.
-	       styles: [
-    {
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "hue": "#ff4400"
-            },
-            {
-                "saturation": -68
-            },
-            {
-                "lightness": -4
-            },
-            {
-                "gamma": 0.72
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "labels.icon"
-    },
-    {
-        "featureType": "landscape.man_made",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "hue": "#0077ff"
-            },
-            {
-                "gamma": 3.1
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "stylers": [
-            {
-                "hue": "#00ccff"
-            },
-            {
-                "gamma": 0.44
-            },
-            {
-                "saturation": -33
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "stylers": [
-            {
-                "hue": "#44ff00"
-            },
-            {
-                "saturation": -23
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "hue": "#007fff"
-            },
-            {
-                "gamma": 0.77
-            },
-            {
-                "saturation": 65
-            },
-            {
-                "lightness": 99
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "gamma": 0.11
-            },
-            {
-                "weight": 5.6
-            },
-            {
-                "saturation": 99
-            },
-            {
-                "hue": "#0091ff"
-            },
-            {
-                "lightness": -86
-            }
-        ]
-    },
-    {
-        "featureType": "transit.line",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "lightness": -48
-            },
-            {
-                "hue": "#ff5e00"
-            },
-            {
-                "gamma": 1.2
-            },
-            {
-                "saturation": -23
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "saturation": -64
-            },
-            {
-                "hue": "#ff9100"
-            },
-            {
-                "lightness": 16
-            },
-            {
-                "gamma": 0.47
-            },
-            {
-                "weight": 2.7
-            }
-        ]
-    }
+		center: {lat: latitude, lng: longitude},
+		zoom: 12,
+		zoomControl: true,
+		// Use Snazzymaps.com to customize the style of the map.
+		   styles: [
+	{
+		"elementType": "geometry",
+		"stylers": [
+			{
+				"hue": "#ff4400"
+			},
+			{
+				"saturation": -68
+			},
+			{
+				"lightness": -4
+			},
+			{
+				"gamma": 0.72
+			}
+		]
+	},
+	{
+		"featureType": "road",
+		"elementType": "labels.icon"
+	},
+	{
+		"featureType": "landscape.man_made",
+		"elementType": "geometry",
+		"stylers": [
+			{
+				"hue": "#0077ff"
+			},
+			{
+				"gamma": 3.1
+			}
+		]
+	},
+	{
+		"featureType": "water",
+		"stylers": [
+			{
+				"hue": "#00ccff"
+			},
+			{
+				"gamma": 0.44
+			},
+			{
+				"saturation": -33
+			}
+		]
+	},
+	{
+		"featureType": "poi.park",
+		"stylers": [
+			{
+				"hue": "#44ff00"
+			},
+			{
+				"saturation": -23
+			}
+		]
+	},
+	{
+		"featureType": "water",
+		"elementType": "labels.text.fill",
+		"stylers": [
+			{
+				"hue": "#007fff"
+			},
+			{
+				"gamma": 0.77
+			},
+			{
+				"saturation": 65
+			},
+			{
+				"lightness": 99
+			}
+		]
+	},
+	{
+		"featureType": "water",
+		"elementType": "labels.text.stroke",
+		"stylers": [
+			{
+				"gamma": 0.11
+			},
+			{
+				"weight": 5.6
+			},
+			{
+				"saturation": 99
+			},
+			{
+				"hue": "#0091ff"
+			},
+			{
+				"lightness": -86
+			}
+		]
+	},
+	{
+		"featureType": "transit.line",
+		"elementType": "geometry",
+		"stylers": [
+			{
+				"lightness": -48
+			},
+			{
+				"hue": "#ff5e00"
+			},
+			{
+				"gamma": 1.2
+			},
+			{
+				"saturation": -23
+			}
+		]
+	},
+	{
+		"featureType": "transit",
+		"elementType": "labels.text.stroke",
+		"stylers": [
+			{
+				"saturation": -64
+			},
+			{
+				"hue": "#ff9100"
+			},
+			{
+				"lightness": 16
+			},
+			{
+				"gamma": 0.47
+			},
+			{
+				"weight": 2.7
+			}
+		]
+	}
 ],
-	    zoomControlOptions: {
-	      position: google.maps.ControlPosition.RIGHT_BOTTOM
-	    }
+		zoomControlOptions: {
+		  position: google.maps.ControlPosition.RIGHT_BOTTOM
+		}
 	  }
 
 		map = new google.maps.Map(document.getElementById('map'), mapOptions);
@@ -251,16 +251,51 @@ photoCount=0;
 			url: flickrUrl + $.param(apiParams),
 			type: 'GET',
 			success: function(photoData){
-				var photoArray = photoData.photos.photo;
+				var photoArray = photoData.photos.photo,
+				table = $('.image-table tbody'),
+				row1 = $('.first-img-row'),
+				row2 = $('.second-img-row');
 				
-				// Build images into table
-				for(var i=0; i<13; i++){
-					imageBuilder(photoArray[i]);
+						// Build images into table
+				// for(var i=0; i<6; i++){
+				//   imageBuilder(photoArray[imgTdCount], row1);
+				// }
+				// for(var i=0; i<6; i++){
+				//   imageBuilder(photoArray[imgTdCount], row2);
+				// }
+
+				function initRowBuild(){
+				  imageBuilder(photoArray[imgTdCount], row1);
+				  while(imgTdCount%6 !== 0){
+						imageBuilder(photoArray[imgTdCount], row1);
+				  }
+				  while(imgTdCount%12 !== 0){
+						imageBuilder(photoArray[imgTdCount], row2);
+				  }
 				}
+
+				function buildRows(){
+					if((imgTdCount-1)%6 === 0 && (imgTdCount-1)%12 !== 0){
+						imageBuilder(photoArray[imgTdCount], row1);
+						while(imgTdCount%12 !== 0){
+					  	imageBuilder(photoArray[imgTdCount], row2);
+						}
+						table.append(row2);
+				  }else if((imgTdCount-1)%12 === 0){
+						imageBuilder(photoArray[imgTdCount], row1);
+						while(imgTdCount%6 !== 0){
+					  	imageBuilder(photoArray[imgTdCount], row1);
+						}
+						table.append(row1);
+				  }
+				}
+
+				initRowBuild();
+				// buildRows();
 			}
 		});
 
-		function imageBuilder(currentPhoto){
+		function imageBuilder(currentPhoto, row){
 			var photoUrl = 'https://farm' + currentPhoto.farm;
 			photoUrl += '.staticflickr.com/' + currentPhoto.server;
 			photoUrl += '/' + currentPhoto.id + '_' + currentPhoto.secret + '.jpg';
@@ -268,13 +303,10 @@ photoCount=0;
 			var imageTd = $('<td>'),
 			photoCreated = $('<img>').addClass('img-responsive').attr('src', photoUrl);
 
-			if(imgTdCount>=0 && imgTdCount<6){
-				imageTd.append(photoCreated);
-				$('.first-img-row').append(imageTd);
-			}else if(imgTdCount>=6 && imgTdCount<12){
-				imageTd.append(photoCreated);
-				$('.second-img-row').append(imageTd);
-			}
+	  	console.log(photoCreated);
+
+			imageTd.append(photoCreated);
+			row.append(imageTd);
 
 			imgTdCount++;
 		}
