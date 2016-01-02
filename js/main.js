@@ -57,7 +57,7 @@ photoCount=0;
 					maxTemp.html(placeWeather[i].maxtempF + ' F');
 					minTemp.html((placeWeather[i].mintempF + ' F'));
 
-					weatherRow.append(day).append(cond).append(maxTemp).append(minTemp).addClass('weather-row');
+					weatherRow.append(day).append(cond).append(maxTemp).append(minTemp).addClass('weather-row').addClass('text-left');
 					weatherTableBody.append(weatherRow);
 				}
 
