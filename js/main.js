@@ -251,16 +251,51 @@ photoCount=0;
 			url: flickrUrl + $.param(apiParams),
 			type: 'GET',
 			success: function(photoData){
-				var photoArray = photoData.photos.photo;
-				
+				var photoArray = photoData.photos.photo,
+        table = $('.image-table tbody'),
+        row1 = $('.first-img-row'),
+        row2 = $('.second-img-row');
+		
 				// Build images into table
-				for(var i=0; i<13; i++){
-					imageBuilder(photoArray[i]);
+        // for(var i=0; i<6; i++){
+        //   imageBuilder(photoArray[imgTdCount], row1);
+        // }
+        // for(var i=0; i<6; i++){
+        //   imageBuilder(photoArray[imgTdCount], row2);
+        // }
+
+        function initRowBuild(){
+          imageBuilder(photoArray[imgTdCount], row1);
+          while(imgTdCount%6 !== 0){
+            imageBuilder(photoArray[imgTdCount], row1);
+          }
+          while(imgTdCount%12 !== 0){
+            imageBuilder(photoArray[imgTdCount], row2);
+          }
+        }
+
+				function buildRows(){
+					if((imgTdCount-1)%6 === 0 && (imgTdCount-1)%12 !== 0){
+            imageBuilder(photoArray[imgTdCount], row1);
+            while(imgTdCount%12 !== 0){
+              imageBuilder(photoArray[imgTdCount], row2);
+            }
+            table.append(row2);
+          }else if((imgTdCount-1)%12 === 0){
+            imageBuilder(photoArray[imgTdCount], row1);
+            while(imgTdCount%6 !== 0){
+              imageBuilder(photoArray[imgTdCount], row1);
+            }
+            table.append(row1);
+          }
 				}
+
+        initRowBuild();
+        // buildRows();
 			}
 		});
 
-		function imageBuilder(currentPhoto){
+		function imageBuilder(currentPhoto, row){
 			var photoUrl = 'https://farm' + currentPhoto.farm;
 			photoUrl += '.staticflickr.com/' + currentPhoto.server;
 			photoUrl += '/' + currentPhoto.id + '_' + currentPhoto.secret + '.jpg';
@@ -268,13 +303,10 @@ photoCount=0;
 			var imageTd = $('<td>'),
 			photoCreated = $('<img>').addClass('img-responsive').attr('src', photoUrl);
 
-			if(imgTdCount>=0 && imgTdCount<6){
-				imageTd.append(photoCreated);
-				$('.first-img-row').append(imageTd);
-			}else if(imgTdCount>=6 && imgTdCount<12){
-				imageTd.append(photoCreated);
-				$('.second-img-row').append(imageTd);
-			}
+      console.log(photoCreated);
+
+			imageTd.append(photoCreated);
+			row.append(imageTd);
 
 			imgTdCount++;
 		}
