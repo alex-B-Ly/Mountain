@@ -1,5 +1,9 @@
 /* BASE - All major html elements (h1, h2, a, etc) go here*/
 
+.brand-heading{
+  padding-top: 30px;
+}
+
 #header {
   position: relative;
   top: 50px;
