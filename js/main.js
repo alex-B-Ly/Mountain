@@ -260,7 +260,6 @@ photoCount=0;
 				row2 = $('.second-img-row');
 				
 				// Build images into table
-
 				function initRowBuild(){
 					$('.first-img-row').empty();
 					$('.second-img-row').empty();
@@ -273,6 +272,7 @@ photoCount=0;
 				  }
 				}
 
+				// Previous images function
 				function prevImgTdCount(){
 					if(imgTdCount>12){
 						imgTdCount = imgTdCount - 24;
@@ -282,9 +282,18 @@ photoCount=0;
 					initRowBuild();
 				}
 
+				// Image Modal function
+				function showImage(){
+					$('.modal-pic').attr('src', $(this).attr('src'));
+					$('#image-modal').modal('toggle');
+				}
+
+				// Functions called and bound within generateImage
 				initRowBuild();
+
 				$('.next-images').on('click', initRowBuild);
 				$('.prev-images').on('click', prevImgTdCount);
+				$(document).on('click', '.place-img', showImage);
 			}
 		});
 
@@ -300,7 +309,6 @@ photoCount=0;
 			row.append(imageTd);
 
 			imgTdCount++;
-			console.log(currentPhoto);
 		}
 
 	}
