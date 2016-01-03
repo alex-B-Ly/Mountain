@@ -34,6 +34,10 @@
   display: none;
 }
 
+.place-img{
+  cursor: pointer;
+}
+
 .prev-images,
 .next-images{
   font-size: 2.5em;
