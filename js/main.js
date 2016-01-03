@@ -256,15 +256,11 @@ photoCount=0;
 				row1 = $('.first-img-row'),
 				row2 = $('.second-img-row');
 				
-						// Build images into table
-				// for(var i=0; i<6; i++){
-				//   imageBuilder(photoArray[imgTdCount], row1);
-				// }
-				// for(var i=0; i<6; i++){
-				//   imageBuilder(photoArray[imgTdCount], row2);
-				// }
+				// Build images into table
 
 				function initRowBuild(){
+					$('.first-img-row').empty();
+					$('.second-img-row').empty();
 				  imageBuilder(photoArray[imgTdCount], row1);
 				  while(imgTdCount%6 !== 0){
 						imageBuilder(photoArray[imgTdCount], row1);
@@ -274,24 +270,18 @@ photoCount=0;
 				  }
 				}
 
-				function buildRows(){
-					if((imgTdCount-1)%6 === 0 && (imgTdCount-1)%12 !== 0){
-						imageBuilder(photoArray[imgTdCount], row1);
-						while(imgTdCount%12 !== 0){
-					  	imageBuilder(photoArray[imgTdCount], row2);
-						}
-						table.append(row2);
-				  }else if((imgTdCount-1)%12 === 0){
-						imageBuilder(photoArray[imgTdCount], row1);
-						while(imgTdCount%6 !== 0){
-					  	imageBuilder(photoArray[imgTdCount], row1);
-						}
-						table.append(row1);
-				  }
+				function prevImgTdCount(){
+					if(imgTdCount>12){
+						imgTdCount = imgTdCount - 24;
+					}else{
+						imgTdCount = 0;
+					}
+					initRowBuild();
 				}
 
 				initRowBuild();
-				// buildRows();
+				$('.next-images').on('click', initRowBuild);
+				$('.prev-images').on('click', prevImgTdCount);
 			}
 		});
 
@@ -302,8 +292,6 @@ photoCount=0;
 
 			var imageTd = $('<td>'),
 			photoCreated = $('<img>').addClass('img-responsive').attr('src', photoUrl);
-
-	  	console.log(photoCreated);
 
 			imageTd.append(photoCreated);
 			row.append(imageTd);
