@@ -294,12 +294,13 @@ photoCount=0;
 			photoUrl += '/' + currentPhoto.id + '_' + currentPhoto.secret + '.jpg';
 
 			var imageTd = $('<td>'),
-			photoCreated = $('<img>').addClass('img-responsive').attr('src', photoUrl);
+			photoCreated = $('<img>').addClass('img-responsive').addClass('place-img').attr('src', photoUrl).attr('title', currentPhoto.title);
 
 			imageTd.append(photoCreated);
 			row.append(imageTd);
 
 			imgTdCount++;
+			console.log(currentPhoto);
 		}
 
 	}
