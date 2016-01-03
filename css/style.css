@@ -15,11 +15,12 @@
 }
 
 .modal-body {
-  background-color: #363636;  
+  background-color: #363636;
+  color: #fff;
 }
 
-.modal {
-  color: gray;
+.modal-pic-description{
+  padding-top: 10px;
 }
 
 #place-search {
