@@ -1,5 +1,9 @@
 /* BASE - All major html elements (h1, h2, a, etc) go here*/
 
+.brand-heading{
+  padding-top: 30px;
+}
+
 #header {
   position: relative;
   top: 50px;
@@ -8,6 +12,43 @@
 #map{
 	width: 100%;
 	height: 500px;
+}
+
+.modal-body {
+  background-color: #363636;  
+}
+
+.modal {
+  color: gray;
+}
+
+#place-search {
+  color: gray;
+  width: 60%;
+  height: 34px;
+  font-size: 20px;
+}
+
+.image-area,
+.weather-table{
+  display: none;
+}
+
+.place-img{
+  cursor: pointer;
+}
+
+.prev-images,
+.next-images{
+  font-size: 2.5em;
+}
+
+.fa-arrow-circle-left{
+  margin-right: 10px;
+}
+
+.fa-arrow-circle-right{
+  margin-left: 10px;
 }
 
 /* SECTIONS */
