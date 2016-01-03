@@ -65,6 +65,9 @@ photoCount=0;
 				generateMap(parseFloat(latLon[0]), parseFloat(latLon[1]));
 				// Generate Images
 				generateImages(parseFloat(latLon[0]), parseFloat(latLon[1]), placeName);
+				// Display Weather and Images
+				$('.weather-table').fadeIn(400);
+				$('.image-area').fadeIn(400);
 			},
 			error: function(){
 				console.log('Weather request failed');

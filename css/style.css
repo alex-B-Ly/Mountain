@@ -14,22 +14,38 @@
 	height: 500px;
 }
 
-
 .modal-header {
-   background-color: black;
-    
- }
- .modal {
-    color: gray;
- }
+  background-color: black;  
+}
 
- #place-search {
+.modal {
+  color: gray;
+}
+
+#place-search {
   color: gray;
   width: 60%;
   height: 34px;
   font-size: 20px;
+}
 
- }
+.image-area,
+.weather-table{
+  display: none;
+}
+
+.prev-images,
+.next-images{
+  font-size: 2.5em;
+}
+
+.fa-arrow-circle-left{
+  margin-right: 10px;
+}
+
+.fa-arrow-circle-right{
+  margin-left: 10px;
+}
 
 /* SECTIONS */
 
