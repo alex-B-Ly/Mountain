@@ -285,6 +285,7 @@ photoCount=0;
 				// Image Modal function
 				function showImage(){
 					$('.modal-pic').attr('src', $(this).attr('src'));
+					$('.modal-pic-description').html($(this).attr('title'));
 					$('#image-modal').modal('toggle');
 				}
 
