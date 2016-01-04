@@ -294,7 +294,7 @@ photoCount=0;
 
 				$('.next-images').on('click', initRowBuild);
 				$('.prev-images').on('click', prevImgTdCount);
-				$(document).on('click', '.place-img', showImage);
+				$('.place-img').on('click', showImage);
 			}
 		});
 
