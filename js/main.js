@@ -270,6 +270,7 @@ photoCount=0;
 				  while(imgTdCount%12 !== 0){
 						imageBuilder(photoArray[imgTdCount], row2);
 				  }
+				  $('.place-img').on('click', showImage);
 				}
 
 				// Previous images function
@@ -294,7 +295,6 @@ photoCount=0;
 
 				$('.next-images').on('click', initRowBuild);
 				$('.prev-images').on('click', prevImgTdCount);
-				$('.place-img').on('click', showImage);
 			}
 		});
 
