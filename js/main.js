@@ -61,6 +61,8 @@ photoCount=0;
 					weatherTableBody.append(weatherRow);
 				}
 
+				// Generate Place Titles
+				$('.flickr-place-title').html('Pictures around ' + placeName);
 				// Generate Map
 				generateMap(parseFloat(latLon[0]), parseFloat(latLon[1]));
 				// Generate Images

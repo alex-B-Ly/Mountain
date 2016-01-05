@@ -23,11 +23,27 @@
   padding-top: 10px;
 }
 
+.weather-table-header-row{
+  font-size: 1.6em;
+}
+
+.weather-row{
+  font-size: 1.3em;
+}
+
+.weather-row:hover{
+  background: #4C4C4C;
+}
+
 #place-search {
   color: gray;
   width: 60%;
   height: 34px;
   font-size: 20px;
+}
+
+#flickr{
+  padding-top: 100px;
 }
 
 .image-area,
@@ -50,6 +66,10 @@
 
 .fa-arrow-circle-right{
   margin-left: 10px;
+}
+
+.github-link-section{
+  padding-top: 250px;
 }
 
 /* SECTIONS */
