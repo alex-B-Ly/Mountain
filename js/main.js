@@ -318,9 +318,13 @@ photoCount=0;
 
 
 
-// FUNCTIONS CALLED
+// FUNCTIONS BOUND
 	$('.place-search-button').on('click', generateWeather);
-
+	$('#place-search').keyup(function(e){
+		if(e.keyCode == 13){
+			generateWeather();
+		}
+	});
 // MAIN FUNCTION END
 
 
