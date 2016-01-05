@@ -30,6 +30,10 @@
   font-size: 20px;
 }
 
+#flickr{
+  padding-top: 100px;
+}
+
 .image-area,
 .weather-table{
   display: none;
@@ -50,6 +54,10 @@
 
 .fa-arrow-circle-right{
   margin-left: 10px;
+}
+
+.github-link-section{
+  padding-top: 250px;
 }
 
 /* SECTIONS */
