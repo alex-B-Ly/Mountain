@@ -1,4 +1,3 @@
-$(document).ready (function() { 
 
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
@@ -42,4 +41,3 @@ function init() {
     });
 }
 
-});
