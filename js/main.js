@@ -44,7 +44,7 @@ photoCount=0;
 					// TODO Figure out the days, will probably have to use switch case inside if statements
 					if(i===0){
 						day.html('Today');
-						cond.html(placeCurrentCondition.temp_F + ' F, ' + placeCurrentCondition.weatherDesc[0].value);
+						cond.html(placeCurrentCondition.temp_F + '&deg; F, ' + placeCurrentCondition.weatherDesc[0].value);
 					}else if(i===1){
 						day.html('Tomorrow');
 					}else{
@@ -54,13 +54,15 @@ photoCount=0;
 					if(i>0){
 						cond.html(placeWeather[i].hourly[0].weatherDesc[0].value);
 					}
-					maxTemp.html(placeWeather[i].maxtempF + ' F');
-					minTemp.html((placeWeather[i].mintempF + ' F'));
+					maxTemp.html(placeWeather[i].maxtempF + '&deg; F');
+					minTemp.html((placeWeather[i].mintempF + '&deg; F'));
 
 					weatherRow.append(day).append(cond).append(maxTemp).append(minTemp).addClass('weather-row').addClass('text-left');
 					weatherTableBody.append(weatherRow);
 				}
 
+				// Generate Place Titles
+				$('.flickr-place-title').html('Pictures around ' + placeName);
 				// Generate Map
 				generateMap(parseFloat(latLon[0]), parseFloat(latLon[1]));
 				// Generate Images
