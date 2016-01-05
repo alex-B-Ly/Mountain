@@ -19,7 +19,9 @@
 * Bootstrap 
 
 ### Deployed Link
-http://my.herokuapp.com/
+vast-meadow-1872.herokuapp.com
+
+Experiencing problems with heroku.  App deploys properly but gets npm error.
 
 ### API's Used
 - API one - https://www.flickr.com/services/api/
