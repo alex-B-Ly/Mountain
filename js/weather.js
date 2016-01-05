@@ -25,7 +25,7 @@ function loadWeather(location, woeid) {
     woeid: woeid,
     unit: 'f',
     success: function(weather) {
-      html = '<h3><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+      html = '<h2>'+weather.temp+'&deg;'+weather.units.temp+'</h2>';
       html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
       html += '<li class="currently">'+weather.currently+'</li>';
       html += '<li>'+weather.alt.temp+'&deg;C</li></ul>';  
